@@ -2,8 +2,8 @@ doctype html
 html(lang='pt-BR')
   head
     title Welcome
-    link(rel='stylesheet', href='/public/stylesheets/bootstrap.css')
-    link(href='/public/stylesheet/style.css' rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(href='/stylesheets/style.css' rel='stylesheet')
   body
     .navbar.navbar-default(role='navigation')
       .container  
@@ -17,13 +17,16 @@ html(lang='pt-BR')
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
-              a(href='/') Home
+              a(href='/') Members
             li
-              a(href='#') Link
+              a(href='/users/register') Register
             li
-              a(href='#') Link
+              a(href='/users/login') Login
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/users/logout') Logout
     .container            
     block content
 
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src='/public/javascript/bootstrap.js)
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+  script(src='/javascript/bootstrap.js')
